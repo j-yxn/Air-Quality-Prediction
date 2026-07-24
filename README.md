@@ -18,7 +18,7 @@ Single LSTM layer (50 units) -> Dropout (0.2) -> Dense (25, ReLU) -> Dense (1). 
 | Model | RMSE (µg/m³) | MAE (µg/m³) | R² |
 |---|---|---|---|
 | Naive persistence (predict next hour = current hour) | 134.27 | 96.18 | -88.956 |
-| LSTM | 1.67 | 1.26 | 0.986 |
+| LSTM | 2.22 | 1.80 | 0.975 |
 
 The naive persistence baseline is included because hourly air quality changes slowly, so "no change" is a competitive prediction by default. The LSTM is only a meaningful result if it beats this baseline by a real margin, not just a small fraction of a percent.
 
